@@ -1,1 +1,39 @@
-<p>footer works!</p>
+<footer>
+    <!-- API STATUS -->
+    <div class="server-status">
+        API STATUS: 
+        <span 
+        class="status blink_me"
+        [ngStyle]="{'background': statusApi ? 'green': 'red'}"
+        >
+        </span>
+        {{(statusApi? 'ONLINE':'OFFLINE')}}
+    </div>
+    <!-- INFO VG AND OST -->
+    <div class="footer-links" >
+        <ul>
+            <li>
+                <a href="https://vgostapi.xyz/api/videogames/all">
+                    Videgames: XXX
+                </a>
+            </li>
+            <li>
+                <a href="https://vgostapi.xyz/api/soundtracks/all">
+                    SoundTracks: XXX
+                </a>
+            </li>
+        </ul>
+    </div>
+    <!-- VERSION -->
+    <div class="version">
+        Current Version: 0.0.1
+    </div>
+    <!-- BY CODE -->
+    <div class="version">
+        <> By Fillikenes 2021
+    </div>
+</footer>
+
+<!-- <div *ngIf="element.estadoRevision == 'X'">
+    <span class="status text-info success warning blink_me">&bull;</span> Turno Cerrado
+</div> -->
