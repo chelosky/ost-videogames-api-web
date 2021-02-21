@@ -1,0 +1,10 @@
+.nav-list{
+    display: inline-block;
+    float: none;
+}
+
+.nav-list > button{
+    margin: 0px 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
