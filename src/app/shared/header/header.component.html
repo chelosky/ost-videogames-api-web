@@ -1,14 +1,30 @@
-<!-- Image and text -->
 <nav class="navbar navbar-light bg-light">
     <div class="container-fluid">
-        <div class="navbar-nav nav-list">
-            <button class="btn btn-sm btn-outline-secondary" type="button">Docs</button>
-            <button class="btn btn-sm btn-outline-secondary" type="button">About</button>
+        <!-- MENU -->
+        <div class="nav-menu">
+            <button 
+                class="btn btn-outline-secondary" 
+                type="button"
+                routerLink="/documentation"
+            >
+                Docs
+            </button>
+            <button 
+                class="btn btn-outline-secondary" 
+                type="button"
+                routerLink="/about"
+            >
+                About
+            </button>
         </div>
-        <a class="navbar-brand" href="https://github.com/chelosky/nodejs-ost-videogames-api">
+        <!-- LOGO -->
+        <a class="navbar-brand" routerLink="/">
+            <img src="../../../assets/img/logo.png" alt="" width="50" height="50" class="d-inline-block align-top">
+        </a>
+        <!-- GITHUB -->
+        <a class="navbar-brand btn btn-sm btn-outline-secondary" href="https://github.com/chelosky/nodejs-ost-videogames-api">
             <img src="../../../assets/img/github.svg" alt="" width="30" height="30" class="d-inline-block align-top">
             GitHub
         </a>
-        
     </div>
 </nav>
