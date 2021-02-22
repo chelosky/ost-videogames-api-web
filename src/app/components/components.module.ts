@@ -6,16 +6,19 @@ import { DatatableTopVgComponent } from './datatable-top-vg/datatable-top-vg.com
 import {MatTableModule} from '@angular/material/table';
 import {MatPaginatorModule} from '@angular/material/paginator';
 import {MatSortModule} from '@angular/material/sort';
+import { QuestionAnswerComponent } from './question-answer/question-answer.component';
 
 
 @NgModule({
   declarations: [
     ShowcaseComponent,
     DatatableTopVgComponent,
+    QuestionAnswerComponent,
   ],
   exports: [
     ShowcaseComponent,
-    DatatableTopVgComponent
+    DatatableTopVgComponent,
+    QuestionAnswerComponent
   ],
   imports: [
     CommonModule,
