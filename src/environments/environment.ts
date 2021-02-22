@@ -4,6 +4,7 @@
 
 export const environment = {
   production: false,
+  name: 'VG OST API',
   api: 'https://vgostapi.xyz/api/'
 };
 

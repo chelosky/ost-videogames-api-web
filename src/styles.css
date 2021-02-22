@@ -1,4 +1,6 @@
-/* You can add global styles to this file, and also import other style files */
+/*
+    GENERALES
+*/
 
 *{
     font-family: 'Oswald', sans-serif;
@@ -8,3 +10,27 @@ body{
     /* background-color: #f8f9fa!important; */
     background-color: #363C48!important;
 }
+
+/*
+    TABLE MATERIAL
+*/
+
+/* 
+
+.table-container {
+    position: relative;
+    overflow: auto;
+    min-width: 400px;
+    max-height: 60vh;
+}
+
+.mat-sort-header-container,
+.mat-header-cell {
+    justify-content: center;
+    margin: 15px;
+}
+
+.mat-cell {
+    text-align: center !important;
+    padding: 15px;
+} */
