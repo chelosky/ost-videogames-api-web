@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { SoundtracksService } from '../../services/soundtracks.service';
+import { VideogamesService } from '../../services/videogames.service';
 
 @Component({
   selector: 'app-footer',
@@ -8,10 +10,29 @@ import { Component, OnInit } from '@angular/core';
 export class FooterComponent implements OnInit {
 
   statusApi: boolean = true;
+  totalVG: number = 0;
+  totalOST: number = 0;
 
-  constructor() { }
+  constructor(
+    private soundTrackService: SoundtracksService,
+    private videogameService: VideogamesService
+  ) { }
 
   ngOnInit(): void {
+    // ALL OST
+    this.soundTrackService.getSoundtracks()
+    .subscribe((resp: any) => {
+      this.totalOST = resp.count;
+    },(err) => {
+      console.error(err);
+    });
+    // ALL VGs
+    this.videogameService.getVideogames()
+    .subscribe((resp: any) => {
+      this.totalVG = resp.count;
+    },(err) => {
+      console.error(err);
+    });
   }
 
 }

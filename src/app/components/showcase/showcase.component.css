@@ -1,0 +1,52 @@
+.api-title{
+    width: 100%;
+    height: 300px;
+    background: url('../../../assets/img/bg1.jpg') no-repeat center center/cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.api-title span{
+    font-size: 100px;
+    font-style: bold;
+}
+
+/* 
+
+.api-title{
+    width: 100%;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #F6F8EB;
+}
+
+.api-title span{
+    font-size: 100px;
+    font-style: bold;
+}
+
+.api-title::before{
+    content: "";
+    position: fixed;
+    left: 0;
+    right: 0;
+    z-index: -1;
+  
+    display: block;
+    background: url('../../../assets/img/bg1.jpg') no-repeat center center/cover;
+    width: 100%;
+    height: 300px;
+  
+    -webkit-filter: blur(2px);
+    -moz-filter: blur(2px);
+    -o-filter: blur(2px);
+    -ms-filter: blur(2px);
+    filter: blur(2px);
+}
+
+*/

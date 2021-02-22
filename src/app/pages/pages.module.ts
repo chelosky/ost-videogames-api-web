@@ -11,6 +11,7 @@ import { HomeComponent } from './home/home.component';
 import { DocsComponent } from './docs/docs.component';
 import { AboutComponent } from './about/about.component';
 import { PagesComponent } from './pages.component';
+import { ComponentsModule } from '../components/components.module';
 
 
 
@@ -31,7 +32,8 @@ import { PagesComponent } from './pages.component';
     CommonModule,
     RouterModule,
     FormsModule,
-    SharedModule
+    SharedModule,
+    ComponentsModule
   ]
 })
 export class PagesModule { }
