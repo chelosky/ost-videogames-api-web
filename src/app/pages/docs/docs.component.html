@@ -1,1 +1,33 @@
-<p>docs works!</p>
+<button routerLink="/form" id="add-button" mat-fab>
+    <mat-icon class="icon">add</mat-icon>
+</button>
+<mat-drawer-container class="sidenav-container" disableClose>
+    <mat-drawer mode="side" opened>
+        <mat-nav-list>
+            <span *ngFor="let item of menu">
+                <span *ngIf="item.children && item.children.length > 0">
+                    <mat-expansion-panel class="mat-elevation-z0">
+                        <mat-expansion-panel-header >
+                            <mat-panel-title >
+                                {{item.displayName}}
+                            </mat-panel-title>
+                        </mat-expansion-panel-header>
+                        <mat-nav-list>
+                            <a mat-list-item *ngFor="let child of item.children">
+                                {{child.displayName}}
+                            </a>
+                        </mat-nav-list>
+                    </mat-expansion-panel>
+                </span>
+                <span *ngIf="!item.children || item.children.length === 0">
+                    <a mat-list-item>{{item.displayName}}</a>
+                </span>
+            </span>
+        </mat-nav-list>
+    </mat-drawer>
+    <mat-drawer-content>
+        <code>
+            <pre >{{placeDetail | json}}</pre>
+        </code>
+    </mat-drawer-content>
+</mat-drawer-container>

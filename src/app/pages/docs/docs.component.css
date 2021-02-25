@@ -1,0 +1,35 @@
+.sidenav-container {
+    width: 100%;
+    min-height: 100vh;
+    border-top: 1px solid #9e9e9e;
+}
+
+.mat-drawer{
+    width: 250px;
+}
+
+#add-button{
+    position: absolute;
+    z-index: 10;
+    right: 20px;
+    bottom: 10px;
+    left: auto;
+}
+
+.mat-expansion-panel-header > span.mat-content {
+    order: 2;    
+}
+
+/* LOCAL */
+pre {
+    background: #333;
+    white-space: pre;
+    border: 1px solid silver;
+    padding: 10px 20px;
+    margin: 20px;
+    border-radius: 10px;
+}
+
+code{
+    color: #ffa726;
+}
