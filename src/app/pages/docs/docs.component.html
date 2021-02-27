@@ -26,8 +26,11 @@
         </mat-nav-list>
     </mat-drawer>
     <mat-drawer-content>
-        <code>
-            <pre >{{placeDetail | json}}</pre>
-        </code>
+        
+        <app-http-request-block [method]="'GET'" [url]="'http://localhost:3000/api/'" [color]="'green'" ></app-http-request-block>
+        <app-http-request-block [method]="'POST'" [url]="'http://localhost:3000/api/'" [color]="'#39D95A'" ></app-http-request-block>
+        <app-http-request-block [method]="'PUT'" [url]="'http://localhost:3000/api/'" [color]="'orange'" ></app-http-request-block>
+        <app-http-request-block [method]="'DELETE'" [url]="'http://localhost:3000/api/'" [color]="'red'" ></app-http-request-block>
+        <app-json-block [data]="placeDetail" ></app-json-block>
     </mat-drawer-content>
 </mat-drawer-container>

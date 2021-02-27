@@ -7,6 +7,8 @@ import {MatTableModule} from '@angular/material/table';
 import {MatPaginatorModule} from '@angular/material/paginator';
 import {MatSortModule} from '@angular/material/sort';
 import { QuestionAnswerComponent } from './question-answer/question-answer.component';
+import { JsonBlockComponent } from './json-block/json-block.component';
+import { HttpRequestBlockComponent } from './http-request-block/http-request-block.component';
 
 
 @NgModule({
@@ -14,11 +16,15 @@ import { QuestionAnswerComponent } from './question-answer/question-answer.compo
     ShowcaseComponent,
     DatatableTopVgComponent,
     QuestionAnswerComponent,
+    JsonBlockComponent,
+    HttpRequestBlockComponent,
   ],
   exports: [
     ShowcaseComponent,
     DatatableTopVgComponent,
-    QuestionAnswerComponent
+    QuestionAnswerComponent,
+    JsonBlockComponent,
+    HttpRequestBlockComponent
   ],
   imports: [
     CommonModule,
